@@ -71,6 +71,28 @@ footer a{color:var(--amber)}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px;box-shadow:0 -8px 24px rgba(0,0,0,.25)}
 .bar b{font-size:22px}.bar small{display:block;color:#aab6d3;font-size:12px;line-height:1.2}
 .bar .btn{font-size:16px;padding:12px 24px;box-shadow:none}
+.urgency-ticker-wrap{
+    background: var(--grad-gold);
+    overflow: hidden;
+    position: relative;
+    padding: 7px 0;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .08);
+}
+.urgency-ticker-track{
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: tickerScroll 22s linear infinite;
+    white-space: nowrap;
+}
+.urgency-ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #1a1306;
+}
 @media(min-width:900px){
 body{padding-bottom:0}.bar{display:none}
 .hero .w,.split{grid-template-columns:1fr 1fr}
@@ -81,7 +103,9 @@ body{padding-bottom:0}.bar{display:none}
 </style>
 </head>
 <body>
-
+<div class="urgency-ticker-wrap">
+  <div class="urgency-ticker-track" id="urgencyTicker"><span class="urgency-ticker-item"><span class="dot2"></span>🔥 Rohit (Delhi) ne abhi PDF kharida</span><span class="urgency-ticker-item"><span class="dot2"></span>⚡ Pooja (Mumbai) ko 25+ interview calls aay</span><span class="urgency-ticker-item"><span class="dot2"></span>🎉 2,847+ people already using this funnel</span><span class="urgency-ticker-item"><span class="dot2"></span>🚀 Sandeep (Bangalore) ne interview 5x kar li</span><span class="urgency-ticker-item"><span class="dot2"></span>⏳ ₹79 launch price — limited time</span><span class="urgency-ticker-item"><span class="dot2"></span>✅ Amit (Ahmedabad) ko better RESULTS mile</span><span class="urgency-ticker-item"><span class="dot2"></span>🔥 Rohit (Delhi) ne abhi PDF kharida</span><span class="urgency-ticker-item"><span class="dot2"></span>⚡ Pooja (Mumbai) ko 25+ interview calls aaye</span><span class="urgency-ticker-item"><span class="dot2"></span>🎉 2,847+ people already using this funnel</span><span class="urgency-ticker-item"><span class="dot2"></span>🚀 Sandeep (Bangalore) ne interview 5x kar li</span><span class="urgency-ticker-item"><span class="dot2"></span>⏳ ₹79 launch price — limited time</span><span class="urgency-ticker-item"><span class="dot2"></span>✅ Amit (Ahmedabad) ko better RESULTS mile</span></div>
+</div>
 <div class="top"><div class="w"><span>Fresher Job-Search Playbook</span><a class="btn buy" href="#buy">Buy now</a></div></div>
 
 <header class="hero"><div class="w">
